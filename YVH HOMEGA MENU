@@ -363,7 +363,7 @@ RunService.RenderStepped:Connect(function()
     if fullbrightEnabled then Lighting.Brightness, Lighting.ClockTime, Lighting.GlobalShadows = 1.5, 14, false
     else Lighting.Brightness, Lighting.ClockTime, Lighting.GlobalShadows = originalSettings.Brightness, originalSettings.ClockTime, originalSettings.GlobalShadows end
 
-    infoLabel.Text = string.format("[B] Fly Noclip\n[Z] Homer View\n[V] Bart View\n[H] Teleport to HomerPart\n[N] Quick Cam Exit\n[HOLD V] Exit View\n[C] Speedboost: %s\n[X] Fullbright: %s\n[M] Toggle Menu", speedEnabled and "FAST" or "NORM", fullbrightEnabled and "ON" or "OFF")
+    infoLabel.Text = string.format("[B] Fly Noclip\n[Z] Homer View\n[V] Bart View\n[H] Teleport To Homer\n[N] Quick Cam Exit\n[HOLD V] Exit View\n[C] Speedboost: %s\n[X] Fullbright: %s\n[M] Toggle Menu", speedEnabled and "FAST" or "NORM", fullbrightEnabled and "ON" or "OFF")
 
     local amIHomer = localPlayer.Team and localPlayer.Team.Name == HOMER_TEAM_NAME
     local espActive = (localPlayer.Team and localPlayer.Team.Name == ESP_TEAM_NAME) or isSpectatingPlayer
