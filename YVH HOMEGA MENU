@@ -417,7 +417,7 @@ RunService.RenderStepped:Connect(function()
             local h = data.Model:FindFirstChild("PurpleESP")
             if espActive and not data.Model:FindFirstChild("HomerRGB") then
                 if not h then h = Instance.new("Highlight", data.Model); h.Name = "PurpleESP"; h.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop end
-                h.FillColor = PURPLE_ESP; h.OutlineColor = rainbow; h.FillTransparency = 0.5
+                h.FillColor = PURPLE_ESP; h.OutlineColor = rainbow; h.FillTransparency = 0.51
             elseif h then h:Destroy() end
         end
     end
